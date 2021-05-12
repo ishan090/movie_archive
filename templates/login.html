@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Login Page{% endblock %}
+
+{% block content %}
+<h1>Please Login To Continue</h1>
+<form action="#" method="post" id="log_form">
+    <label>
+        <input type="text" name="name" placeholder="Username">
+        <input type="password" name="pw" placeholder="Password">
+    </label>
+    <input type="submit">
+</form>
+<p>Already have an account? <a href="{{ url_for('signup') }}">Click here</a> to Sign Up</p>
+<p style="color: red">{{message}}</p>
+{% endblock %}

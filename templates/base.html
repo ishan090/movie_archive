@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" href="https://archive.org/services/img/short_films">
+    {% block header %}{% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark justify-content-between">
+<!--    <img src="https://archive.org/services/img/short_films" alt="logo" height="30px" width="30px" style="float: left">-->
+    <a class="navbar-brand" href="{{ url_for('home') }}" style="color: white; margin-right: 0">Movie Archive</a>
+
+  <form class="form-inline" action="#" method="post">
+{#    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">#}
+    <button class="btn btn-outline-success my-2 my-sm-0" name="log_in_out" value="{{log_msg}}"
+            type="submit" {{status}}>{{log_msg}}</button>
+  </form>
+</nav>
+<div style="margin: 25px 10px 10px 10px; text-align: center">
+    {% block content %}{% endblock %}
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="../static/filter_table.js" type="text/javascript"></script>
+</body>
+</html>

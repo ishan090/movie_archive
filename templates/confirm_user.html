@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+    Reauthorise Login
+{% endblock %}
+{% block content %}
+
+    <form>
+        <!-- <h3>Trying to access page for only authorised people</h3> -->
+        <h6>You are seeing this because you (or the previous user who had accessed this computer)
+            had failed to log out successfully</h6>
+        <p>Type in your password if you had logged in previously,<br>
+            or click here to access the actual login page</p>
+        <label>
+            <input type="text" name="pw" placeholder=" Your Password">
+            <input type="submit" value="submit">
+        </label>
+    </form>
+
+{% endblock %}

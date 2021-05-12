@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block title %}Add A Movie{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+    <!-- <p style="color: red; font-size: small;">{{msg}}</p>
+    <div name= "form">
+    <h3>ADD A MOVIE:</h3>
+    <label>hello</label>
+    <form action="#" method = "POST" id="inputs" class="selects">
+        <p>Name of the movie:</p>
+        <input type="text" name="name">
+
+        <p>Director of the movie:</p>
+        <input type="text" name="director">
+
+        <p>Language:</p>
+        <select name="lang">
+        <div class = "options">
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Bengali">Bengali</option>
+            <option value="French">French</option>
+            <option value="Swedish">Swedish</option>
+        </div>
+        </select>
+        <p>The Month in which you Watched this movie</p>
+        <select name="month">
+        <div class="options">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+           <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </div>
+        </select>
+
+        <p>Status of the movie: </p>
+        <select name="status">
+        <div class="options">
+            <option value="Watched">Watched</option>
+            <option value="Watching">Watching</option>
+            <option value="Yet to start">Yet to start</option>
+        </div>
+        </select>
+        <div>
+            <input type= "submit" value= "add" name="add">
+        </div>
+        <p>{{msg}}</p>
+    </form>
+</div> -->
+<form action="#" method="post" style="background-color: #FFF2CC; width: 50%; margin: auto; padding: 20px; border-radius: 10px">
+  <h3 id="heading">Add Movie</h3>
+  <!-- <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Name</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Director</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div> -->
+  <div class="form-group col-md-10" style="margin: auto; margin-top: 10px">
+    <label for="inputName">Name</label>
+    <input name="name" type="text" class="form-control" id="inputName" placeholder="Name of the Movie">
+  </div>
+  <div class="form-group col-md-10" style="margin: auto; margin-top: 10px">
+    <label for="inputDirector">Director</label>
+    <input name="director" type="text" class="form-control" id="inputDirector" placeholder="Director of the Movie">
+  </div>
+  <!-- <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div> -->
+  <!-- <div class="form-row">
+    <div class="form-group col-md-6">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="inputAddress2">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+  </div> -->
+  <!-- <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div> -->
+  <div class="form-group col-md-10" style="margin: auto; margin-top: 10px">
+    <label for="inputLang">Language</label>
+    <input name="lang" id="inputLang" class="form-control" placeholder="Language">
+  </div>
+  <div class="form-group col-md-10" style="margin: auto; margin-top: 10px">
+    <label for="inputStatus">Status</label>
+    <select name="status" id="inputStatus" class="form-control">
+      <option selected>Watched</option>
+      <option>Watching</option>
+      <option>Yet to Start</option>
+    </select>
+  </div>
+  <!-- <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div> -->
+  <button type="submit" name="add" class="btn btn-primary" style="margin: auto; margin-top: 10px; margin-bottom: 10px">Add</button>
+  <br>
+  {{msg}}
+  <a href="{{ url_for('home') }}">Click here</a> to go Back to the Home Page
+</form>
+
+{% endblock %}

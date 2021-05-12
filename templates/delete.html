@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Remove{% endblock %}
+
+{% block content %}
+
+<h3 id="heading">Enter name of Movie you want to remove from Database.</h3>
+<form action="#" method="POST" id="inputs">
+	<label>
+		<input type="text" name="movie" placeholder="Move Name">
+		<input type="submit" value="submit" name="del_movie">
+	</label>
+</form>
+<p>{{del_msg}}<br><a href="{{ url_for('home') }}">Click here</a> to get back to the home page.</p>
+
+{% endblock %}

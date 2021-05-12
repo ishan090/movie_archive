@@ -1,0 +1,73 @@
+#inputs input{
+    padding: 5px;
+    border-radius: 3px;
+    margin: 0;
+    float: none;
+}
+#heading {
+    margin-bottom: 20px;
+}
+.selects {
+  padding: 5px;
+  border-radius: 3px;
+  margin: 0;
+  float: none;
+}
+table {
+    margin: auto;
+    margin-top: 15px;
+    width: 80%;
+    border-radius: 10px;
+}
+table tr th{
+    padding: 20px;
+    background: aliceblue;
+}
+table tr td {
+    padding: 20px;
+    background: aliceblue;
+}
+th:first-of-type {
+  border-top-left-radius: 20px;
+}
+th:last-of-type {
+  border-top-right-radius: 20px;
+  padding: 20px 5px 20px 0;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 20px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 20px;
+}
+
+#myInput {
+  background-image: url('https://www.w3schools.com/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 70%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin: auto;
+  align-content: center;
+  margin-bottom: 12px; /* Add some space below the input */
+  margin-top: 12px;
+  border-radius: 5px;
+  /*float: none;*/
+}
+#add {
+  padding: 12px 15px 12px 15px;
+  background: none;
+  border: 1px #28A745 solid;
+  border-radius: 5px;
+  color: #28A745;
+  outline: 2px blue;
+  outline-width: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#add:hover {
+  background: #28A745;
+  color: white;
+}
